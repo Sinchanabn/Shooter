@@ -22,7 +22,7 @@ public class ScrollingBackground : MonoBehaviour
 
         transform.position += new Vector3(0, 5 * Time.deltaTime * speed);
 
-        if (transform.position.y > 30)
+        if (transform.position.y > 18)
         {
             transform.position = new Vector3(transform.position.x, 0f);
         }

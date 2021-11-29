@@ -73,7 +73,8 @@ public class PlayerController : MonoBehaviour
     {
         //Instantiating the first bullet
         GameObject bullet01 = (GameObject)Instantiate(playerBullet);
-        bullet01.transform.position = bulletPosition1.transform.position;//Set the bullet position
+        bullet01.transform.position = bulletPosition1.transform.position;
+        bullet01.transform.rotation = bulletPosition1.transform.rotation;//Set the bullet position
 
         //Instantiating the Second bullet
         GameObject bullet02 = (GameObject)Instantiate(playerBullet);
@@ -83,6 +84,6 @@ public class PlayerController : MonoBehaviour
         GameObject bullet03 = (GameObject)Instantiate(playerBullet);
         bullet03.transform.position = bulletPosition3.transform.position;//Set the bullet position
 
-    }
 
+    }
 }

@@ -1,0 +1,36 @@
+
+{
+  "templateType" : "MCQ",
+  "majorVersion" : 0,
+  "minVersion"   : 0,
+  "name"         : "SPLQ0095T",
+  "scenePath"    : "SPLQ0095T",
+  "dsgcPath"     : "DynamicSoundGroupCreator",
+  "commonStagePrefab" : "Common",
+  "stages"            : [
+    {
+      "stageId" : "SPLQ0095T_HI_Q1",
+      "prefab"  : "SPLQ0095T_HI_Q1"
+    },
+    {
+      "stageId" : "SPLQ0095T_HI_Q2",
+      "prefab"  : "SPLQ0095T_HI_Q2"
+    },
+    {
+      "stageId" : "SPLQ0095T_MC_Q3",
+      "prefab"  : "SPLQ0095T_MC_Q3"
+    },
+    {
+      "stageId" : "SPLQ0095T_MC_Q4",
+      "prefab"  : "SPLQ0095T_MC_Q4"
+    },
+    {
+      "stageId" : "SPLQ0095T_CU_Q5",
+      "prefab"  : "SPLQ0095T_CU_Q5"
+    },
+    {
+      "stageId" : "SPLQ0095T_CU_Q6",
+      "prefab"  : "SPLQ0095T_CU_Q6"
+    }
+  ]
+}

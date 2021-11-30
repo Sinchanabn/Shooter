@@ -23,7 +23,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     //Method to spwan the enemy randamly
 
@@ -37,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
 
         // Instantiating the Enemy
         GameObject anEnemy = (GameObject)Instantiate(Enemy);
-        anEnemy.transform.position = new Vector2 (Random.Range(min.x, max.x),max.y);
+        anEnemy.transform.position = new Vector2(Random.Range(min.x, max.x), max.y);
 
         //Calling next Enemy Spwan
         NextEnemSpwan();
@@ -54,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
         }
         else
             spawnInSeconds = 1f;
-        
+
         Invoke("SpawnEnemy", spawnInSeconds);
 
     }

@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f211a8248c6ae5418508f01f0118e53, type: 3}
+  m_Name: SPLQ0095T_MC_Q4-Options-Correct-1-StageStart
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114141973725522894}
+  - {fileID: 114973622875345442}
+  - {fileID: 114904353210685402}
+  - {fileID: 114410826027779208}
+  - {fileID: 114535233968074350}
+  gameObject: {fileID: 0}
+  currentRunningNodes: 0
+  currentRunningNodeName: 
+  debug: 0
+--- !u!114 &114141973725522894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c74586e49004924090adadcefbfbec9, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Start Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -520, y: -72}
+  ports:
+    keys:
+    - start
+    values:
+    - _fieldName: start
+      _node: {fileID: 114141973725522894}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114973622875345442}
+        reroutePoints: []
+      - fieldName: enter
+        node: {fileID: 114410826027779208}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &114410826027779208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af25f4d0d02452341972bc9433275c1b, type: 3}
+  m_Name: Set Color Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -180.50635, y: -289.75397}
+  ports:
+    keys:
+    - enter
+    - exit
+    values:
+    - _fieldName: enter
+      _node: {fileID: 114410826027779208}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: start
+        node: {fileID: 114141973725522894}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114410826027779208}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  affectChildrenSetColor: 0
+  visibility: 0
+  elementColor: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &114535233968074350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43272bfd9aa5d7345800a9ae5db9dd16, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Toggle Input Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -166.11629, y: 164.9217}
+  ports:
+    keys:
+    - enter
+    - exit
+    values:
+    - _fieldName: enter
+      _node: {fileID: 114535233968074350}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114535233968074350}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  toggleGlobalInput: 0
+  toggleGameElementInput: 0
+  globalInputStatus: 2
+  localInputStatus: 2
+--- !u!114 &114904353210685402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6661395765b5fe74abd7d6f514217c3b, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Set Transform Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 130.37303, y: -46.349068}
+  ports:
+    keys:
+    - enter
+    - exit
+    values:
+    - _fieldName: enter
+      _node: {fileID: 114904353210685402}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: 114973622875345442}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114904353210685402}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  transformParameter: 0
+  elementPosition: {x: 0, y: 0}
+  elementScale: {x: 0, y: 0}
+  elementRotation: 0
+  useVectorVariables: 1
+  vectorVariable: 1
+--- !u!114 &114973622875345442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6661395765b5fe74abd7d6f514217c3b, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Set Transform Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -191.69835, y: -51.624638}
+  ports:
+    keys:
+    - enter
+    - exit
+    values:
+    - _fieldName: enter
+      _node: {fileID: 114973622875345442}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: start
+        node: {fileID: 114141973725522894}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114973622875345442}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114904353210685402}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  transformParameter: 1
+  elementPosition: {x: 0, y: 0}
+  elementScale: {x: 0, y: 0}
+  elementRotation: 0
+  useVectorVariables: 1
+  vectorVariable: 3

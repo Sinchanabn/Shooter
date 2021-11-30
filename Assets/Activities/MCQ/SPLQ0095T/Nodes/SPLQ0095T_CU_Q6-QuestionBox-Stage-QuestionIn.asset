@@ -1,0 +1,979 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f211a8248c6ae5418508f01f0118e53, type: 3}
+  m_Name: SPLQ0095T_CU_Q6-QuestionBox-Stage-QuestionIn
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114350834338646786}
+  - {fileID: 114753398940618790}
+  - {fileID: 114751250066597290}
+  - {fileID: 114315788227097660}
+  - {fileID: 114212689080468894}
+  - {fileID: 114997383073649524}
+  - {fileID: 114802810156151254}
+  - {fileID: 114148388304619028}
+  - {fileID: 114392417367826398}
+  - {fileID: 114146696685659890}
+  - {fileID: 114450570387090134}
+  - {fileID: 114090808697081378}
+  - {fileID: 114260790821309344}
+  - {fileID: 0}
+  gameObject: {fileID: 0}
+  currentRunningNodes: 0
+  currentRunningNodeName: 
+  debug: 0
+--- !u!114 &114090808697081378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb9eb9676e367141aa632f72fbb2c17, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Tween Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -952, y: 120}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114090808697081378}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114997383073649524}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114090808697081378}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114260790821309344}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114090808697081378}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  useCustomCurve: 0
+  property: 4
+  ease: 1
+  loop: 0
+  loopType: 0
+  loops: 0
+  jumpCount: 0
+  minDuration: 0.2
+  maxDuration: 0.2
+  positionTo: {x: 0, y: 0}
+  positionOffset: {x: 0, y: 0}
+  scaleTo: {x: 0, y: 0}
+  scaleOffset: {x: 0, y: 0}
+  tweenColor: {r: 1, g: 1, b: 1, a: 1}
+  offset: {x: 0, y: 0, z: 0}
+  visibilityTween: 1
+  affectChildrenColorTween: 1
+  rotationTo: 0
+  rotationOffset: 0
+  strength: 0
+  height: 0
+  jumpTo: {x: 0, y: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  glowColor: {r: 1, g: 1, b: 1, a: 1}
+  blurAmount: 0.0075
+  glowStrength: 1.1
+  glowInner: 0
+  glowOuter: 0
+  glowOffset: 0
+  glowPower: 0
+  glowOption: 0
+  localPosTween: 0
+  stopTween: 0
+  customEvent: 0
+  stopOn: 0
+  stopOnCustomEvent: 
+  commitTween: 0
+  useVectorVariables: 1
+  vectorVariable: 4
+  customEventIndex: 0
+  isInfiniteLoopRunning: 0
+--- !u!114 &114146696685659890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43272bfd9aa5d7345800a9ae5db9dd16, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Toggle Input Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 648, y: 328}
+  ports:
+    keys:
+    - enter
+    - exit
+    values:
+    - _fieldName: enter
+      _node: {fileID: 114146696685659890}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114148388304619028}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114146696685659890}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  toggleGlobalInput: 1
+  toggleGameElementInput: 1
+  globalInputStatus: 1
+  localInputStatus: 0
+--- !u!114 &114148388304619028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59adff704db9aa24e90767551423027b, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Play Sound Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 280, y: 280}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114148388304619028}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114146696685659890}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114148388304619028}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114392417367826398}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114148388304619028}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  useDepreciated: 1
+  dynamicSoundGroup: _VO
+  audioPlayState: 0
+  randomVariation: 0
+  specificPitch: 0
+  variation: SPLQ0095T_Q6_S2
+  varTypeIn: 0
+  volume: 1
+  pitch: 1
+  audioClip: {fileID: 0}
+  loop: 0
+  infinite: 0
+  audioLoops: 1
+--- !u!114 &114212689080468894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fe30c0b342b53429ab6a72e64f56b9, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Trigger Custom Event Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8, y: 88}
+  ports:
+    keys:
+    - enter
+    - exit
+    values:
+    - _fieldName: enter
+      _node: {fileID: 114212689080468894}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114802810156151254}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114212689080468894}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  eventType: Stage-OptionsIn
+  index: 2
+  customEventNames:
+  - Stage-AnchorButtonIn
+  - Stage-QuestionIn
+  - Stage-OptionsIn
+  - Stage-ContainerIn
+  - Stage-Container1_Consume
+  - Stage-Container2_Consume
+  - Stage-Group2Active
+  - Stage-Group2Inactive
+  - Stage-CorrectOption1
+  - Stage-CorrectOption2
+  - Stage-CorrectOption3
+  - Stage-CorrectOption4
+  - Stage-CorrectOption5
+  - Stage-CorrectOption6
+  - Stage-CorrectOption7
+  - Stage-CorrectOption8
+  - Stage-CorrectOption9
+  - Stage-CorrectOption10
+  - Victory-Screen
+  - Intro1End
+  - Intro2End
+  - Outro1End
+  - Outro2End
+  - Intro3End
+  - Intro4End
+  - Intro5End
+  - Outro3End
+  - Outro4End
+  - Outro5End
+  - Clear-Intro-Outro
+  - Skip-Intro-Outro
+  - Hint-HP
+  - Hint-HP-Close
+--- !u!114 &114260790821309344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b36e74023ce84d9410290cdb15911, type: 3}
+  m_Name: MNSQ0214T_MQ_Q1 -QuestionBox-Stage-QuestionIn
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1192, y: 136}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114260790821309344}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114090808697081378}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114260790821309344}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114450570387090134}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114260790821309344}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  minWaitTime: 0.1
+  maxWaitTime: 0.1
+--- !u!114 &114315788227097660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb9eb9676e367141aa632f72fbb2c17, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Tween Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1480, y: -328}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114315788227097660}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114315788227097660}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114753398940618790}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114315788227097660}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  useCustomCurve: 0
+  property: 1
+  ease: 27
+  loop: 0
+  loopType: 0
+  loops: 0
+  jumpCount: 0
+  minDuration: 0.4
+  maxDuration: 0.4
+  positionTo: {x: 0, y: 0}
+  positionOffset: {x: 0, y: 0}
+  scaleTo: {x: 0, y: 0}
+  scaleOffset: {x: 0, y: 0}
+  tweenColor: {r: 1, g: 1, b: 1, a: 1}
+  offset: {x: 0, y: 0, z: 0}
+  visibilityTween: 1
+  affectChildrenColorTween: 0
+  rotationTo: 0
+  rotationOffset: 0
+  strength: 0
+  height: 0
+  jumpTo: {x: 0, y: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  glowColor: {r: 1, g: 1, b: 1, a: 1}
+  blurAmount: 0.0075
+  glowStrength: 1.1
+  glowInner: 0
+  glowOuter: 0
+  glowOffset: 0
+  glowPower: 0
+  glowOption: 0
+  localPosTween: 0
+  stopTween: 0
+  customEvent: 0
+  stopOn: 0
+  stopOnCustomEvent: 
+  commitTween: 0
+  useVectorVariables: 1
+  vectorVariable: 4
+  customEventIndex: 0
+  isInfiniteLoopRunning: 0
+--- !u!114 &114350834338646786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c74586e49004924090adadcefbfbec9, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Start Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -2168, y: -376}
+  ports:
+    keys:
+    - start
+    values:
+    - _fieldName: start
+      _node: {fileID: 114350834338646786}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114753398940618790}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &114392417367826398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b36e74023ce84d9410290cdb15911, type: 3}
+  m_Name: SHBQ0060T-MC_Q1-V2-QuestionBox-Stage-QuestionIn
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 24, y: 280}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114392417367826398}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114148388304619028}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114392417367826398}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114802810156151254}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114392417367826398}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  minWaitTime: 0.5
+  maxWaitTime: 0.5
+--- !u!114 &114450570387090134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb9eb9676e367141aa632f72fbb2c17, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Tween Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1481.738, y: 107.41815}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114450570387090134}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114260790821309344}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114450570387090134}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114753398940618790}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114450570387090134}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  useCustomCurve: 1
+  property: 4
+  ease: 27
+  loop: 0
+  loopType: 0
+  loops: 0
+  jumpCount: 0
+  minDuration: 0.4
+  maxDuration: 0.4
+  positionTo: {x: 0, y: 0}
+  positionOffset: {x: 0, y: 0}
+  scaleTo: {x: 0, y: 0}
+  scaleOffset: {x: 0, y: 0}
+  tweenColor: {r: 1, g: 1, b: 1, a: 1}
+  offset: {x: 0, y: 0, z: 0}
+  visibilityTween: 1
+  affectChildrenColorTween: 0
+  rotationTo: 0
+  rotationOffset: 0
+  strength: 0
+  height: 0
+  jumpTo: {x: 0, y: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  glowColor: {r: 1, g: 1, b: 1, a: 1}
+  blurAmount: 0.0075
+  glowStrength: 1.1
+  glowInner: 0
+  glowOuter: 0
+  glowOffset: 0
+  glowPower: 0
+  glowOption: 0
+  localPosTween: 0
+  stopTween: 0
+  customEvent: 0
+  stopOn: 0
+  stopOnCustomEvent: 
+  commitTween: 0
+  useVectorVariables: 1
+  vectorVariable: 4
+  customEventIndex: 0
+  isInfiniteLoopRunning: 0
+--- !u!114 &114751250066597290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59adff704db9aa24e90767551423027b, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Play Sound Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1464, y: -584}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114751250066597290}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114751250066597290}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114753398940618790}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114751250066597290}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  useDepreciated: 1
+  dynamicSoundGroup: _Content-Box
+  audioPlayState: 2
+  randomVariation: 0
+  specificPitch: 0
+  variation: Content-Box-In
+  varTypeIn: 0
+  volume: 1
+  pitch: 1
+  audioClip: {fileID: 0}
+  loop: 0
+  infinite: 0
+  audioLoops: 1
+--- !u!114 &114753398940618790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b36e74023ce84d9410290cdb15911, type: 3}
+  m_Name: SHBQ0060T_MQ_Q1 -QuestionBox-Stage-QuestionIn
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1800, y: -392}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114753398940618790}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114315788227097660}
+        reroutePoints: []
+      - fieldName: enter
+        node: {fileID: 114751250066597290}
+        reroutePoints: []
+      - fieldName: enter
+        node: {fileID: 114450570387090134}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114753398940618790}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: start
+        node: {fileID: 114350834338646786}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114753398940618790}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  minWaitTime: 0.1
+  maxWaitTime: 0.1
+--- !u!114 &114802810156151254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59adff704db9aa24e90767551423027b, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Play Sound Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -392, y: 152}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114802810156151254}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114212689080468894}
+        reroutePoints: []
+      - fieldName: enter
+        node: {fileID: 114392417367826398}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114802810156151254}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114997383073649524}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114802810156151254}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  useDepreciated: 1
+  dynamicSoundGroup: _VO
+  audioPlayState: 0
+  randomVariation: 0
+  specificPitch: 0
+  variation: SPLQ0095T_Q6_S1
+  varTypeIn: 0
+  volume: 1
+  pitch: 1
+  audioClip: {fileID: 0}
+  loop: 0
+  infinite: 0
+  audioLoops: 1
+--- !u!114 &114997383073649524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b36e74023ce84d9410290cdb15911, type: 3}
+  m_Name: Delay Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -648, y: 152}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114997383073649524}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114802810156151254}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114997383073649524}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114090808697081378}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114997383073649524}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  minWaitTime: 0.3
+  maxWaitTime: 0.3

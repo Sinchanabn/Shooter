@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f211a8248c6ae5418508f01f0118e53, type: 3}
+  m_Name: SPLQ0095T_HI_Q1-Anchor-Slot-1-Closure
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114854382972556534}
+  - {fileID: 114731298195648266}
+  - {fileID: 114431458503976080}
+  - {fileID: 114252633618079434}
+  gameObject: {fileID: 0}
+  currentRunningNodes: 0
+  currentRunningNodeName: 
+  debug: 0
+--- !u!114 &114252633618079434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb9eb9676e367141aa632f72fbb2c17, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Tween Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 514.96216, y: 297.12274}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114252633618079434}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114252633618079434}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: onComplete
+        node: {fileID: 114431458503976080}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114252633618079434}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  useCustomCurve: 1
+  property: 1
+  ease: 27
+  loop: 0
+  loopType: 0
+  loops: 0
+  jumpCount: 0
+  minDuration: 1
+  maxDuration: 1
+  positionTo: {x: 0, y: 0}
+  positionOffset: {x: 0, y: 0}
+  scaleTo: {x: 1.1, y: 1.1}
+  scaleOffset: {x: 0, y: 0}
+  tweenColor: {r: 1, g: 1, b: 1, a: 1}
+  offset: {x: 0, y: 0, z: 0}
+  visibilityTween: 1
+  affectChildrenColorTween: 0
+  rotationTo: 0
+  rotationOffset: 0
+  strength: 0
+  height: 0
+  jumpTo: {x: 0, y: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 3.3333333
+      outSlope: 3.3333333
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -3.3333333
+      outSlope: -3.3333333
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  glowColor: {r: 1, g: 1, b: 1, a: 1}
+  blurAmount: 0.0075
+  glowStrength: 1.1
+  glowInner: 0
+  glowOuter: 0
+  glowOffset: 0
+  glowPower: 0
+  glowOption: 0
+  localPosTween: 0
+  stopTween: 0
+  customEvent: 0
+  stopOn: 0
+  stopOnCustomEvent: 
+  commitTween: 0
+  useVectorVariables: 0
+  vectorVariable: 2
+  customEventIndex: 0
+  isInfiniteLoopRunning: 0
+--- !u!114 &114431458503976080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b36e74023ce84d9410290cdb15911, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Delay Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 233.46005, y: 285.17606}
+  ports:
+    keys:
+    - onComplete
+    - enter
+    - exit
+    values:
+    - _fieldName: onComplete
+      _node: {fileID: 114431458503976080}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114252633618079434}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 114431458503976080}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: start
+        node: {fileID: 114854382972556534}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114431458503976080}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  minWaitTime: 0.4
+  maxWaitTime: 0.4
+--- !u!114 &114731298195648266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e94b665a9434ae4eb5fb4880dc1382b, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Change Sprite Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 197, y: -7}
+  ports:
+    keys:
+    - enter
+    - exit
+    values:
+    - _fieldName: enter
+      _node: {fileID: 114731298195648266}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: start
+        node: {fileID: 114854382972556534}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 114731298195648266}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lockAction: 0
+  continueExecution: 1
+  sprite: {fileID: 21300000, guid: 1dd0c3fc78d259e4da8787cd132e74ee, type: 3}
+  index: 1
+--- !u!114 &114854382972556534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c74586e49004924090adadcefbfbec9, type: 3}
+  m_Name: Byjus.K123.Templates.MCQ.Start
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -121, y: -1}
+  ports:
+    keys:
+    - start
+    values:
+    - _fieldName: start
+      _node: {fileID: 114854382972556534}
+      _typeQualifiedName: Byjus.K123.Templates.MCQ.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 114731298195648266}
+        reroutePoints: []
+      - fieldName: enter
+        node: {fileID: 114431458503976080}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0

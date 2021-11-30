@@ -16,10 +16,13 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPosition2;
     public GameObject bulletPosition3;
 
+    //to store the explosion prefab
+    public GameObject explosionGo;
+
     // Start is called before the first frame update*/
     void Start()
     {
-       
+        InvokeRepeating("Shoot", 1f, 0.2f);
     }
 
     // Update is called once per frame
@@ -27,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
 
         //Calling the bullet functon for every 30 secs
-        InvokeRepeating("Shoot", 5f, 30f);
+        
 
 
         //Accessing the Axis
@@ -69,6 +72,20 @@ public class PlayerController : MonoBehaviour
         transform.position = pos;
 
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+
+    {
+
+        //Detecting the collition of enemy and enemy bullet
+        if ((col.tag == "EnemyShipTag") || (col.tag == "EnemyBulletTag"))
+        {
+            PlayExlosion();
+            
+           Destroy(gameObject);//Destroying the player ship
+        }
+
+    }
     void Shoot()
     {
         //Instantiating the first bullet
@@ -84,6 +101,17 @@ public class PlayerController : MonoBehaviour
         GameObject bullet03 = (GameObject)Instantiate(playerBullet);
         bullet03.transform.position = bulletPosition3.transform.position;//Set the bullet position
 
-
     }
+    //Method to Instantite an Explosion
+    void PlayExlosion()
+    {
+        //Instatiating the explosion
+        GameObject explosion= (GameObject)Instantiate(explosionGo);
+
+        explosion.transform.position = transform.position;
+    }
+
+    
+
+
 }

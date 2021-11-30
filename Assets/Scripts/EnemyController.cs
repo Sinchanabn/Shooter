@@ -7,6 +7,8 @@ public class EnemyController : MonoBehaviour
 
     float speed;
 
+    public GameObject explosionGo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +37,24 @@ public class EnemyController : MonoBehaviour
         }
 
         
+    }
+      void OnTriggerEnter2D(Collider2D col)
+        {
+           //Detecting the collision of the enemy with player or with players bullet
+           if((col.tag == "PlayerShipTag")||(col.tag == "PlayerBulletTag"))
+              {
+            PlayExlosion();
+               //Destroy Enemy
+                Destroy(gameObject);
+        } 
+        }
+
+    //Method to instatiate Explosion
+    void PlayExlosion()
+    {
+        //Instatiating the explosion
+        GameObject explosion = (GameObject)Instantiate(explosionGo);
+
+        explosion.transform.position = transform.position;
     }
 }

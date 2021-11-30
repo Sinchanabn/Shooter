@@ -17,10 +17,6 @@ public class PlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Fireing the bullets when we press space
-
-        
-
         //Getting the bullet position
         Vector2 position = transform.position;
 
@@ -38,7 +34,15 @@ public class PlayerBullet : MonoBehaviour
             Destroy(gameObject);
 
         }
-
-
+        
     }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        //Detecting the collision of the player bullet with enemy
+        if (col.tag == "EnenyShipTag") 
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

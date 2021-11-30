@@ -43,7 +43,7 @@ public class EnemyController : MonoBehaviour
            //Detecting the collision of the enemy with player or with players bullet
            if((col.tag == "PlayerShipTag")||(col.tag == "PlayerBulletTag"))
               {
-            PlayExlosion();
+                PlayExlosion();
                //Destroy Enemy
                 Destroy(gameObject);
         } 

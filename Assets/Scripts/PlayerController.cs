@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
+    public GameObject GameManagerGo;//ref to game manager script
+
 
     //To store the player movment
     Rigidbody2D rb;
@@ -18,6 +20,24 @@ public class PlayerController : MonoBehaviour
 
     //to store the explosion prefab
     public GameObject explosionGo;
+
+    //Reference to the lives uI text
+    public Text LivesUIText;
+
+    const int MaxLives = 3;//Max player lives
+    int Lives;//current player lives
+
+    public void Init()
+    {
+        Lives = MaxLives;
+
+        //Updating the lives UI text
+        LivesUIText.text = Lives.ToString();
+
+        //set this player game object to active
+        gameObject.SetActive(true);
+
+    }
 
     // Start is called before the first frame update*/
     void Start()
@@ -81,8 +101,21 @@ public class PlayerController : MonoBehaviour
         if ((col.tag == "EnemyShipTag") || (col.tag == "EnemyBulletTag"))
         {
             PlayExlosion();
+
+            Lives--;//Substracting one lives
+            LivesUIText.text = Lives.ToString();//Updating the lives UI text
+
+            if(Lives==0)//If over player is dead
+            {
+                //chnage the Game Manager State to game over state
+
+                //hide the player
+                GameManagerGo.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
+                Destroy(gameObject);//Destroying the player ship
+            }
+
             
-           Destroy(gameObject);//Destroying the player ship
+           
         }
 
     }

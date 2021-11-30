@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     //Reference to our Game objet
     public GameObject playButton;
     public GameObject playerShip;//ref to player spawner
-    public GameObject enemySpawner;//ref to enemy spawner
+    public GameObject enemySpawner;//ref to enemy spawnerover 
+    public GameObject gameOver;//Ref to Game over
 
 
     public enum GameManagerState
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
         {
             case GameManagerState.Opening:
                 //hide game over
+                gameOver.SetActive(false);
                 //set play button visible(active)
                 playButton.SetActive(true);
 
@@ -56,9 +58,10 @@ public class GameManager : MonoBehaviour
                 enemySpawner.GetComponent<EnemySpawner>().UnscheduleEnemySpawner();
 
                 //Display game over
+                gameOver.SetActive(true);
 
                 //Change game manager state to operating state after 8 seconds
-                Invoke("ChnageToOperatingState", 8f);
+                Invoke("ChnageToOperatingState", 1f);
 
 
                 break;

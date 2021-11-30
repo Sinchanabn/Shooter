@@ -109,9 +109,10 @@ public class PlayerController : MonoBehaviour
             {
                 //chnage the Game Manager State to game over state
 
-                //hide the player
                 GameManagerGo.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
-                Destroy(gameObject);//Destroying the player ship
+
+                //hide the player
+                gameObject.SetActive(false);
             }
 
             

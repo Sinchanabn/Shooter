@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public float speed;
 
+    public AudioSource source;
+
 
     //Player  prefab game obj
     public GameObject playerBullet;
@@ -38,7 +40,7 @@ public class PlayerController : MonoBehaviour
         transform.position = new Vector2(0, 0);
 
         //set this player game object to active and call shoot
-        InvokeRepeating("Shoot", 0f, 0.1f);
+        InvokeRepeating("Shoot", 0f, 0.2f);
         gameObject.SetActive(true);
 
     }
@@ -52,9 +54,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
         //Calling the bullet functon for every 30 secs
-        
+
 
 
 
@@ -128,6 +131,9 @@ public class PlayerController : MonoBehaviour
     }
    public void Shoot()
     {
+        source.Play();
+       
+
         //Instantiating the first bullet
         GameObject bullet01 = (GameObject)Instantiate(playerBullet);
         bullet01.transform.position = bulletPosition1.transform.position;

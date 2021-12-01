@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
+    public AudioSource source;
+
   void DestroyObject()
     {
+        source.Play();
         Destroy(gameObject);
     }
 }

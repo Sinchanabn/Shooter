@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
     public GameObject playerShip;//ref to player spawner
     public GameObject enemySpawner;//ref to enemy spawnerover 
     public GameObject gameOver;//Ref to Game over
+    public GameObject scoreUIText;//ref to score text
+
+    //public GameObject PlayerBulletSpawner;// ref to bullets
+
+
 
 
     public enum GameManagerState
@@ -44,11 +49,16 @@ public class GameManager : MonoBehaviour
 
                 break;
             case GameManagerState.Gameplay:
+
+                //Reset the score
+                scoreUIText.GetComponent<GameScore>().Score = 0;
+
                 //hiding the button on game play state;
                 playButton.SetActive(false);
 
                 //set the player visible and init the player lives
                 playerShip.GetComponent<PlayerController>().Init();
+               // playerShip.GetComponent<PlayerController>().Shoot();
 
                 //Start enemy Spawner
                 enemySpawner.GetComponent<EnemySpawner>().ScheduleEnemySpawner();

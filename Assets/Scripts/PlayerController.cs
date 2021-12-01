@@ -34,7 +34,11 @@ public class PlayerController : MonoBehaviour
         //Updating the lives UI text
         LivesUIText.text = Lives.ToString();
 
-        //set this player game object to active
+        //Resetting the player position to center
+        transform.position = new Vector2(0, 0);
+
+        //set this player game object to active and call shoot
+        InvokeRepeating("Shoot", 0f, 0.1f);
         gameObject.SetActive(true);
 
     }
@@ -42,7 +46,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update*/
     void Start()
     {
-        InvokeRepeating("Shoot", 1f, 0.2f);
+        
     }
 
     // Update is called once per frame
@@ -51,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
         //Calling the bullet functon for every 30 secs
         
+
 
 
         //Accessing the Axis
@@ -113,6 +118,7 @@ public class PlayerController : MonoBehaviour
 
                 //hide the player
                 gameObject.SetActive(false);
+                CancelInvoke("Shoot");
             }
 
             
@@ -120,7 +126,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    void Shoot()
+   public void Shoot()
     {
         //Instantiating the first bullet
         GameObject bullet01 = (GameObject)Instantiate(playerBullet);

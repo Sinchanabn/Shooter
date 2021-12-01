@@ -27,10 +27,10 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemy()
     {
         //Buttom left point of the screen
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0.1f, 0.1f));
 
         //Top Right point of the screen
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(.9f, .9f));
 
         // Instantiating the Enemy
         GameObject anEnemy = (GameObject)Instantiate(Enemy);

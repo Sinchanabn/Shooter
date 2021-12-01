@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    GameObject scoreUITextGo;//ref to text Ui game obj
 
-    float speed;
+    float speed;//for enemy speed
 
     public GameObject explosionGo;
 
@@ -13,6 +14,9 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         speed = 2f;
+
+        //get the score text UI
+        scoreUITextGo = GameObject.FindGameObjectWithTag("ScoreTextTag");
 
     }
 
@@ -44,6 +48,8 @@ public class EnemyController : MonoBehaviour
            if((col.tag == "PlayerShipTag")||(col.tag == "PlayerBulletTag"))
               {
                 PlayExlosion();
+            //add 100 points to the score
+            scoreUITextGo.GetComponent<GameScore>().Score += 100;
                //Destroy Enemy
                 Destroy(gameObject);
         } 
@@ -57,4 +63,6 @@ public class EnemyController : MonoBehaviour
 
         explosion.transform.position = transform.position;
     }
+
+
 }
